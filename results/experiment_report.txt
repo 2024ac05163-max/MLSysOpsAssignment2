@@ -1,0 +1,27 @@
+======================================================================
+EXPERIMENT REPORT
+Batch Size: 1024 | Epochs: 10
+======================================================================
+
+Sequential Training:
+  Total Time     : 55.54s
+  Final Train Loss: 0.0597
+  Final Test Acc  : 0.9582
+
+Parallel Training (P=2):
+  Total Time     : 62.71s
+  Speedup        : 0.89x
+  Efficiency     : 0.44
+  Final Train Loss: 0.0634
+  Final Test Acc  : 0.9576
+  Avg Comm Time  : 0.2316s/epoch
+
+Parallel Training (P=4):
+  Total Time     : 36.17s
+  Speedup        : 1.54x
+  Efficiency     : 0.38
+  Final Train Loss: 0.0581
+  Final Test Acc  : 0.9578
+  Avg Comm Time  : 0.2458s/epoch
+
+======================================================================
